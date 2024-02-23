@@ -3,98 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Portfolio</title>
+    <title>My Portfolio</title>
+
+    <!-- CSS External Link -->
+    <link rel="stylesheet" href="main.css">
+    
+    <!-- Google External Links -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/4f0f0b91f9.js" crossorigin="anonymous"></script>
+
 </head>
-
-<script src="https://kit.fontawesome.com/61a7de8c73.js" crossorigin="anonymous"></script>
 <body>
- <header>
-    <div >
-        <img src="./images/amike logo.png" alt="brand logo">
-    </div>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li> 
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-            
-
-        </ul>
-    </nav>
- </header>  
-
- <main>
-    <!-- home section -->
-    <section id="home">
-        <div id="left div">
-     <div id="social icons"></div>
-      <div class="icon"> <i class="fa-brands fa-facebook"></i></div>
-
-      <div class="icons"> <i class="fa-brands fa-instagram"></i></div>
-
-      <div class="icon"> <i class="fa-solid fa-x"></i></div>
-
-      <div class="icon"></div>
-      <div class="icon"></div>
-
-      
-    
-    </div>
-      <h1> I AM JONATHAN DOE</h1>
-<P>I am Jonathan, professional web developer with long time experience in this field</P>
-<div id="actionbtn"> <button> my portfolio</button>
-    <button>contact me </button>
-<div id="my images" align="right">
-    <img src="./images/jonathan doe.png" alt="my image">
-    
-</div>
-
+    <header id="header" class="horizontal">
+        <div id="brand">
+            <img class="logo" src="./images/logo.png" alt="brand logo">
         </div>
 
+        <nav id="navbar">
+            <ul class="horizontal">
+                <li class="navItem"><a href="#home">Home</a></li>
+                <li class="navItem"><a href="#services">Services</a></li>
+                <li class="navItem"><a href="#about">About</a></li>
+                <li class="navItem"><a href="#skills">Skills</a></li>
+                <li class="navItem"><a href="#portfolio">Portfolio</a></li>
+                <li class="navItem"><a href="#blog">Blog</a></li>
+                <li class="navItem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </section>
+    <main>
+        <!-- home section -->
+        <section id="home">
+            <div id="left-container">
+                <div id="social-icons">
+                    <div class="icons"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="icons"><i class="fa-brands fa-pinterest-p"></i></div>
+                    <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="icons"><i class="fa-brands fa-behance"></i></div>
+                </div>
+                <div id="intro-text">
+                    <h1>I am Jonathan Doe</h1>
+                    <p>
+                        i'm Jonathan, professional web developer with <br>
+                        long time experience in this field
+                    </p>
+                </div>
+                <div id="buttons">
+                    <button class="portfolio-btn">My Portfolio</button>
+                    <button class="youtubeBtn"><i class="fa fa-play"></i></button>
+                </div>
+            </div>
+
+            <div id="right-container">
+                <img class="white-man" src="./images/man-01.png" alt="white_man">
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section id="services">
+            <div class="services-text">
+                <h4>SERVICES</h4>
+                <h2>My Services</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy texts.
+                </p>
+                <hr color="#FF4A57">
+            </div>
+            
+            <div id="grid">
+                <div class="cards">
+                    <div class="iconica"><i class="fa-brands fa-github"></i></div>
+                    <h2>Web Development</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+                </div>
+                <div class="cards">
+                    <div class="iconica"><i class="fa-brands fa-codepen"></i></i></div>
+                    <h2>Web Design</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+                </div>
+                <div class="cards">
+                    <div class="iconica"><i class="fa-regular fa-file-video"></i></div>
+                    <h2>Video Editing</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+                </div>
+                <div class="cards">
+                    <div class="iconica"><i class="fa-solid fa-camera"></i></div>
+                    <h2>Photography</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+                </div>
+                <div class="cards">
+                    <div class="iconica"><i class="fa-brands fa-apple"></i></div>
+                    <h2>App Developing</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+                </div>
+                <div class="cards">
+                    <div class="iconica"><i class="fa-brands fa-github"></i></div>
+                    <h2>SEO Expart</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about">
+            <div class="about-container-one">
+                <h2>About Me</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy texts.
+                </p>
+                <hr color="#FF4A57">
+            </div>
+
+            <div id="about-container-two">
+                <div class="ab-image">
+                    <img src="./images/man-02.png" alt="">
+                </div>
+
+                <div class="ab-text">
+                    <h2>Hi There</h2>
+                    <p>
+                        In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis
+                    </p>
+                    <p>
+                        nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis porta sem turpis quis leo. Nulla in feugiat elit
+                    </p>
+
+                    <div class="contact-table">
+                        <div class="contact-columns">
+                            <p>
+                                <span>Name:</span> <br>
+                                Jonathan Doe
+                            </p>
+                        </div>
+                        <div class="contact-columns">
+                            <p>
+                                <span>Phone:</span> <br>
+                                +1 023 454 345
+                            </p>
+                        </div>
+                        <div class="contact-columns">
+                            <p>
+                                <span>Email:</span> <br>
+                                example@domain.com
+                            </p>
+                        </div>
+                        <div class="contact-columns">
+                            <p>
+                                <span>LinkedIn:</span> <br>
+                                Jonathan_123
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section -->
+        <section id="skills"></section>
+
+        <!-- portfolio section -->
+        <section id="portfolio"></section>
+
+        <!-- blog section -->
+        <section id="blog"></section>
+
+        <!-- contact section -->
+         <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="" method="">
+                <input type="text" placeholder="first name" name="firstName">
+                <br>
+                <input type="email" placeholder="email" name="email">
+            </form>
+        </section>
     
 
-    <!-- service section -->
-    <section id="Services"></section>
+    </main>
+    <footer>
 
-    <!-- about section -->
-    <section id="about"></section>
-
-    <!-- skill section -->
-    <section id="skill"></section>
-
-     <!-- portfolio section -->
-     <section id="portfolio"></section>
-
-      <!-- blog section -->
-    <section id="blog"></section>
-
-     <!-- contac section -->
-     <section id="Contact"></section>
-     <h2>contact us</h2>
-     <form action=""method="">
-        <input type="text" placeholder="first name"
-        name=" first name">
-        <br> <br>
-        <input type="email"placeholder="email
-        " name="email"> 
-        <br>  <br>
-        <input type="tel" name="phone"
-        placeholder="phone number">
-        <br> <br>
-        <input type="date" name="dob"
-        placeholder="DOB">
-        <br> <br>
-        <textarea name="name" id="message" cols="30" rows="10"></textarea>
-        </form>
-
- </main>
-
- <footer></footer>
+    </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
